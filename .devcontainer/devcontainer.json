@@ -1,21 +1,21 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/javascript-node
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/javascript-
 // -
 {
   "name": "docs.github.com",
-  "build": {
+  "build": {2
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version
     "args": { "VARIANT": "24" }
   },
 
   // Install features. Type 'feature' in the VS Code command palette for a full list.
-  "features": {
+  "features": {2
     "sshd": "latest",
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
-  "customizations": {
+  "customizations": {2
     "vscode": {
       // Set *default* container specific settings.json values on container create.
       "settings": {
@@ -24,7 +24,7 @@
         "git.autofetch": true
       },
       // Visual Studio Code extensions which help authoring for docs.github.com.
-      "extensions": [
+      "extensions": [2
         "dbaeumer.vscode-eslint",
         "sissel.shopify-liquid",
         "davidanson.vscode-markdownlint",
@@ -38,10 +38,10 @@
       ]
     },
     "codespaces": {
-      "repositories": {
+      "repositories": {2
         // allow Codespaces to pull from separate repo when user has access
         "github/docs-early-access": {
-          "permissions": {
+          "permissions": {2
             "contents": "write"
           }
         }
@@ -54,7 +54,7 @@
 
   "portsAttributes": {
     "4000": {
-      "label": "Review"
+      "label": 
     }
   },
 
@@ -67,7 +67,7 @@
   "postAttachCommand": "gh cs ports visibility 4000:public -c \"$CODESPACE_NAME\"",
   
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node",
+  "remoteUser": "2",
 
   "hostRequirements": {
     "memory": "16gb",
